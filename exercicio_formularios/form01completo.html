@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario completo 01</title>
+    <style type="text/css">
+        label{
+            display:inline-block;
+            width:150px;
+        }
+        input[type="text"]{
+            background-color:yellow;
+            font-weight: bold;
+            border-radius:25px;
+            padding:0px 20px;
+            height:30px;
+        }
+    </style>
+</head>
+<body>
+    <form action="#">
+        <fieldset>
+        <legend>Dados pessoais</legend>
+        <label>Nome:</label>
+        <input name="nome" type="text"maxlength="40" size="40" placeholder="Nome"/>
+        <br/>
+        <br/>
+
+        <label>Senha:</label>
+        <input name="senha" type="password"maxlength="4" size="4"/>
+        <br/>
+        <br/>
+
+        <label>Escolha os itens aplicáveis</label>
+        <input name="video" type="checkbox"/>Placa de vídeo
+        <input name="memoria" type="checkbox"/>Memória
+        <input name="caixa" type="checkbox"/>Caixa de som
+        <br/>
+        <br/>
+
+        <label>Genero</label>
+        <input name="genero" type="radio" value="M"/>Masculino
+        <input name="genero" type="radio" value="F"/>Feminino
+        <input name="genero" type="radio" value="O"/>Outros
+        <br/>
+        <br/>
+
+        <label>Estado civil</label>
+        <input name="civil" type="radio" value="S"/>Solteiro
+        <input name="civil" type="radio" value="c"/>Casado
+        <input name="civil" type="radio" value="D"/>Divorciado
+        <br/>
+        <br/>
+
+        <label>Estado - UF</label>
+        <select name="estado">
+            <option vlue="PR">Paraná</option>
+            <option vlue="SC">Santa Catarina</option>
+            <option vlue="MS">Minas Gerais</option>
+            <option vlue="ES">Espírito Santo</option>
+          
+        </select>
+        <br/>
+        <br/>
+
+     </fieldset>
+     <fieldset>
+     <legend>Estado</legend>
+        <select name="frete">
+            <option value="0">PR frete Gratis</option>
+            <option value="20">SP R$ 20,00</option>
+            <option value="15">SC R$15,00</option>
+        </select>
+     </fieldset>
+     <br><br>
+
+    <label>suco</label>
+     <select>
+       <optgroup label="fruta">
+        <option>Laranja</option>
+        <option> Abacaxi</option>
+        <option> Morango</option>
+      </optgroup>
+      <optgroup label="mistura">
+        <option>Água</option>
+        <option> Leite</option>
+      </optgroup>
+    </select>
+    <br><br>
+    <input type="submit"name="action" value="enviar"/>
+    <input type="submit"name="action" value="limpar"/>
+    </form>
+</body>
+</html>
