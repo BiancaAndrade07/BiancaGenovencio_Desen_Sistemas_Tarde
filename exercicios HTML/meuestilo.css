@@ -4,7 +4,7 @@ p{
 }
 
 h3,h4{
-    font-family: Arial;
+    font-family:Arial;
 }
 
 h3{
@@ -21,9 +21,11 @@ li{
 
 body{
     background:silver;
+    font-family:Arial black ;
 }
 
 p{
     color:green;
     font-style:italic;
+    font-family:Arial;
 }
