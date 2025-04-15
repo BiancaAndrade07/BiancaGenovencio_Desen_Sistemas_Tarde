@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"/>
+<title>Formulário com Máscaras</title>
+<meta name="description" content="Formulário com máscaras em HTML e JavaScript">
+<link rel="stylesheet" href="formcompleto.css">
+<script src="formcompleto.js" defer></script>
+</head>
+<body>
+<h1>Bem vindo ao site HTML da Bianca de Andrade Genovencio</h1>
+<h2>Preencha o formulário abaixo para participar do curso de HTML & CSS completo, Senai - Téc Desenv Sistemas</h2><br />
+
+<form action="Script_do_Formulario.php" method="post">
+<!-- DADOS PESSOAIS -->
+<fieldset>
+<legend>Dados Pessoais</legend>
+<table cellspacing="10" border="5">
+<tr>
+<td><label for="nome">Nome: </label></td>
+<td><input type="text" name="nome" onkeypress="mascara(this,somenteLetras)" required></td>
+
+<td><label for="sobrenome">Sobrenome: </label></td>
+<td><input type="text" name="sobrenome" onkeypress="mascara(this,somenteLetras)" required></td>
+</tr>
+<tr>
+<td><label>Nascimento: </label></td>
+<td><input type="date" name="nascimento" required></td>
+</tr>
+<tr>
+<td><label for="rg">RG: </label></td>
+<td><input type="text" name="rg" onkeypress="mascara(this,RGeCPF)" maxlength="12" required></td>
+</tr>
+<tr>
+<td><label>CPF:</label></td>
+<td><input type="text" name="cpf" onkeypress="mascara(this,RGeCPF)" maxlength="14" required></td>
+</tr>
+</table>
+</fieldset>
+<br />
+
+<!-- ENDEREÇO -->
+<fieldset>
+<legend>Dados de Endereço</legend>
+<table cellspacing="10">
+<tr>
+<td><label for="rua">Rua:</label></td>
+<td><input type="text" name="rua" onkeypress="mascara(this,somenteLetras)" required></td>
+
+<td><label for="numero">Número:</label></td>
+<td><input type="text" name="numero" size="4" onkeypress="mascara(this,somenteNumeros)" required></td>
+</tr>
+<tr>
+<td><label for="bairro">Bairro: </label></td>
+<td><input type="text" name="bairro" onkeypress="mascara(this,somenteLetras)" required></td>
+</tr>
+<tr>
+<td><label for="cidade">Cidade: </label></td>
+<td><input type="text" name="cidade" onkeypress="mascara(this,somenteLetras)" required></td>
+</tr>
+<tr>
+<td><label for="cep">CEP: </label></td>
+<td><input type="text" name="cep" onkeypress="mascara(this,somenteNumeros)" maxlength="9" required></td>
+</tr>
+</table>
+</fieldset>
+<br />
+
+<!-- DADOS DE LOGIN -->
+<fieldset>
+<legend>Dados de login</legend>
+<table cellspacing="10">
+<tr>
+<td><label for="login">Login de usuário: </label></td>
+<td><input type="text" name="login" onkeypress="mascara(this,loginUsuario)" required></td>
+</tr>
+<tr>
+<td><label for="pass">Senha: </label></td>
+<td><input type="password" name="pass" onkeypress="mascara(this,senha)" required></td>
+</tr>
+<tr>
+<td><label for="passconfirm">Confirme a senha: </label></td>
+<td><input type="password" name="passconfirm" onkeypress="mascara(this,senha)" required></td>
+</tr>
+</table>
+</fieldset>
+
+<br />
+<input type="submit" value="Enviar">
+<input type="reset" value="Limpar">
+</form>
+<h1>Bianca De Andrade</h1>
+</body>
+</html>
