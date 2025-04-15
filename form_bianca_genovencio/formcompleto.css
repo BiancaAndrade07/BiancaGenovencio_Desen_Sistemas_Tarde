@@ -1,0 +1,100 @@
+
+body {
+font-family: Arial, sans-serif;
+background-color: #ffd2e4;
+padding: 20px;
+color:#333
+}
+
+h1 {
+color: #cc0666;
+text-align: center;
+}
+
+h2 {
+color: #c7487d;
+border-bottom: 2px solid #ccc;
+padding-bottom: 5px;
+margin-top: 30px;
+}
+
+form {
+background-color: rgb(248, 157, 221);
+max-width: 900px;
+margin: auto;
+padding: 30px;
+border-radius: 10px;
+box-shadow: 0 0 12px rgba(204,0,102,0.2);
+}
+
+fieldset {
+border: 2px solid #ff99cc;
+margin-bottom: 20px;
+border-radius: 8px;
+padding:20px;
+background-color:#fffafa;
+}
+
+label {
+display: inline-block;
+margin-top: 10px;
+font-weight: bold;
+color:#660333;
+width:100%;
+}
+
+legend{
+    font-weight:bold;
+    font-size: 1.2em;
+    color:#cc0066
+}
+
+table{
+    border-collapse:collapse;
+    width: 100%;
+}
+
+table,td,th{
+    border:none;
+    padding: 8px;
+    vertical-align: middle;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="file"],
+select {
+width: 90%;
+padding: 8px;
+margin-bottom: 12px;
+margin-top:4px;
+border: 1px solid #eecaca;
+border-radius: 5px;
+box-sizing: border-box;
+background-color:#c2a5a5 ;
+}
+
+input[type="submit"],
+input[type="reset"] {
+background-color: white;
+color: #cc0066;
+border: 2px solid #ff66cc;
+padding: 10px 25px;
+border-radius: 25px;
+cursor: pointer;
+font-size: 15px;
+font-weight: bold;
+margin-top: 10px;
+margin-right: 10px;
+transition: all 0.3s ease;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+background-color: #ffccdd;
+color: #800040;
+border-color: #e60073;
+transform: scale(1.05);
+}
